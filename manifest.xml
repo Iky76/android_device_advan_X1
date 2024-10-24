@@ -104,6 +104,7 @@
         <fqname>@2.3::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
+<<<<<<< HEAD
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOffloadConfig/default</fqname>
@@ -141,6 +142,8 @@
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
+=======
+>>>>>>> 7b71dec (X1: Switch to Pixel Thermal HAL)
         <name>vendor.mediatek.hardware.camera.atms</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IATMs/default</fqname>

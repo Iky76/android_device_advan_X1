@@ -95,7 +95,35 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+<<<<<<< HEAD
     $(LOCAL_PATH)
+=======
+    $(LOCAL_PATH) \
+    hardware/mediatek
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
+# USB
+$(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    wpa_supplicant \
+    hostapd \
+    libwifi-hal-wrapper \
+    android.hardware.wifi-service
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+>>>>>>> 7b71dec (X1: Switch to Pixel Thermal HAL)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/advan/ADVAN_X1/ADVAN_X1-vendor.mk)

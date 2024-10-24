@@ -500,7 +500,6 @@ ro.vendor.mtk_slow_motion_support=1
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_tb_wifi_3g_mode=0
 ro.vendor.mtk_tee_gp_support=1
-ro.vendor.mtk_thermal_2_0=1
 ro.vendor.mtk_trustonic_tee_support=1
 ro.vendor.mtk_uicc_clf=1
 ro.vendor.mtk_video_hevc_enc_support=1

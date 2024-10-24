@@ -1295,6 +1295,7 @@ vendor/bin/mtk_pkm_service
 vendor/bin/mtk_plpath_utils_ota
 vendor/bin/muxreport
 vendor/bin/netdagent
+<<<<<<< HEAD
 vendor/bin/netdc
 vendor/bin/nfcstackp-vendor
 vendor/bin/rt5512_calibration
@@ -1324,6 +1325,33 @@ vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.gps_pwr.rc
 vendor/etc/init/init.thermal_core.rc
 vendor/etc/init/init.wfca.rc
+=======
+vendor/etc/init/netdagent.rc
+vendor/etc/init/tetheroffloadservice.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Thermal
+vendor/bin/thermal_core
+vendor/bin/thermal_intf
+vendor/etc/init/init.thermal_core.rc
+vendor/etc/thermal/disable_skin_control.conf
+vendor/etc/thermal/disable_thermal.conf
+vendor/etc/thermal/disable_thermal_temp.conf
+vendor/etc/thermal/disable_throttling.conf
+vendor/etc/thermal/thermal.conf
+vendor/etc/thermal/thermal_mtbf.conf
+vendor/etc/thermal/thermal_policy_00.conf
+vendor/etc/thermal/thermal_policy_02.conf
+vendor/etc/thermal/thermal_policy_08.conf
+
+# Wi-Fi
+vendor/bin/wlan_assistant
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/etc/init/init.wlan_drv.rc
+>>>>>>> 7b71dec (X1: Switch to Pixel Thermal HAL)
 vendor/etc/init/init.wmt_drv.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/lights-mtk-default.rc
