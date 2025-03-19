@@ -3,6 +3,8 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 
 # Bluetooth
+ro.vendor.bt.platform=connac1x
+ro.vendor.mtk.bt_sap_enable?=true
 
 # Display
 debug.sf.disable_backpressure=1

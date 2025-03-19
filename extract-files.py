@@ -1,6 +1,10 @@
 #!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
+<<<<<<< HEAD
 # SPDX-FileCopyrightText: The LineageOS Project
+=======
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+>>>>>>> 9b314ef (X1: Import Python extract-utils)
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -10,6 +14,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+<<<<<<< HEAD
     'device/advan/ADVAN_X1',
 ]
 
@@ -38,6 +43,14 @@ blob_fixups: blob_fixups_user_type = {
 >>>>>>> 7b71dec (X1: Switch to Pixel Thermal HAL)
 module = ExtractUtilsModule(
     'ADVAN_X1',
+=======
+    'device/advan/X1',
+    'hardware/mediatek',
+]
+
+module = ExtractUtilsModule(
+    'X1',
+>>>>>>> 9b314ef (X1: Import Python extract-utils)
     'advan',
     namespace_imports=namespace_imports,
 )
