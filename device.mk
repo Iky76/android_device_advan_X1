@@ -6,6 +6,9 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Inherit generic_ramdisk product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
@@ -36,7 +39,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # API levels
-PRODUCT_SHIPPING_API_LEVEL := 34
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -92,6 +95,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6789:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6789
+=======
+# Inherit generic_ramdisk product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 31
+>>>>>>> 1e0c7ca (X1: Inherit `generic_ramdisk` product configuration)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
