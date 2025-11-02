@@ -19,6 +19,9 @@ AB_OTA_PARTITIONS += \
     boot
 BOARD_USES_RECOVERY_AS_BOOT := true
 
+# Include 64-bit drmserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_DRMSERVER := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
